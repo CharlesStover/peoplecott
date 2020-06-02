@@ -50,6 +50,10 @@ const CHILDREN: Record<string, Child> = {
     ],
   },
   Butterfinger: NESTLE_SOAKED_WATER_CONTROVERSY,
+  'Buxton Mineral Water Company': {
+    parent: Entity.Nestle,
+    sources: ['https://en.wikipedia.org/wiki/Buxton'],
+  },
   Cailler: NESTLE_OUR_BRANDS,
   Carnation: NESTLE_OUR_BRANDS,
   Carpathia: {
