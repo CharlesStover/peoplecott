@@ -20,6 +20,18 @@ makes it easy for you to remove this veil while shopping.
   be boycott by all people. Each listed companies must include a reason so that
   readers may determine if they agree.
 
+## Contributing
+
+Contributing to Peoplecott's database requires knowing basic TypeScript. Open a
+pull request with your desired change.
+
+To add a brand to boycott, edit `src/constants/entity.ts` to give that brand an
+`enum` value, then edit `src/constants/entities.ts` to provide reasons and
+citations.
+
+To add a child company, edit `src/constants/children.ts` to provide the parent
+company and a citation.
+
 ## Sponsor 💗
 
 If you are a fan of this project, you may

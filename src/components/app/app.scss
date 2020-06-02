@@ -4,8 +4,10 @@
   flex-grow: 1;
   margin: 0 auto;
   max-width: 40rem;
+  padding-top: 1em;
 
-  h1 {
+  > h1 {
     font-family: sans-serif;
+    margin: 0;
   }
 }

@@ -2,6 +2,7 @@ import fuzzysort from 'fuzzysort';
 import React from 'react';
 import { entityNames, globalStateProvider } from '../../utils';
 import './results.scss';
+import { Link } from 'react-router-dom';
 
 const fuzzyPreparedEntityNames: Fuzzysort.Prepared[] = entityNames.map(
   (entityName: string): Fuzzysort.Prepared =>
@@ -27,12 +28,12 @@ export default function Results(): JSX.Element {
         {fuzzyResults.map(
           (fuzzyResult: Fuzzysort.Result): JSX.Element => (
             <li key={fuzzyResult.target}>
-              <a
-                href={`?entity=${fuzzyResult.target}`}
+              <Link
+                to={`?entity=${fuzzyResult.target}`}
                 title={fuzzyResult.target}
               >
                 {fuzzyResult.target}
-              </a>
+              </Link>
             </li>
           ),
         )}

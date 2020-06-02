@@ -11,5 +11,11 @@ export default function Search(): JSX.Element {
     [setSearch],
   );
 
-  return <input onChange={handleSearchChange} value={search} />;
+  return (
+    <input
+      onChange={handleSearchChange}
+      placeholder="Search for a brand"
+      value={search}
+    />
+  );
 }

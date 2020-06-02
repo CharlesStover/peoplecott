@@ -1,12 +1,12 @@
-import entitiesJson from '../entities.json';
+import { CHILDREN, ENTITIES } from '../constants';
 
 const entityNames: string[] = [];
 
-for (const entity of entitiesJson.entities) {
-  entityNames.push(entity.name);
+for (const entityName of Object.keys(ENTITIES)) {
+  entityNames.push(entityName);
 }
 
-for (const entityName of Object.keys(entitiesJson.aliases)) {
+for (const entityName of Object.keys(CHILDREN)) {
   entityNames.push(entityName);
 }
 
