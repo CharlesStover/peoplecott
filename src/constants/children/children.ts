@@ -17,6 +17,12 @@ To add a child company, use the format
 */
 const CHILDREN: Record<string, Child> = {
   Aero: NESTLE_OUR_BRANDS,
+  'After Eight': {
+    parent: Entity.Nestle,
+    sources: [
+      'https://www.nestle.co.uk/en-gb/brands/chocolate_and_confectionery/boxed',
+    ],
+  },
   Alpo: NESTLE_OUR_BRANDS,
   Arrowhead: {
     parent: Entity.Nestle,
@@ -221,6 +227,10 @@ const CHILDREN: Record<string, Child> = {
   Resource: NESTLE_OUR_BRANDS,
   'Resource breeze': NESTLE_NUTRITIONAL,
   'S. Pellegrino': NESTLE_OUR_BRANDS,
+  Schoeller: {
+    parent: Entity.Nestle,
+    sources: ['https://www.schoeller.de/'],
+  },
   'Shredded Wheat': NESTLE_SOAKED_WATER_CONTROVERSY,
   'Shredded Wheat Bitesize': NESTLE_HEALTHY_EATING,
   Shreddies: {
@@ -248,6 +258,10 @@ const CHILDREN: Record<string, Child> = {
   Thomy: NESTLE_OUR_BRANDS,
   'Toll House': NESTLE_OUR_BRANDS,
   Traumacal: NESTLE_NUTRITIONAL,
+  'Wagner GmbH': {
+    parent: Entity.Nestle,
+    sources: ['https://www.original-wagner.de/ueber-uns/geschichte'],
+  },
   Wonka: NESTLE_SOAKED_WATER_CONTROVERSY,
 };
 
