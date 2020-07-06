@@ -254,6 +254,12 @@ const CHILDREN: Record<string, Child> = {
       'https://www.dairyreporter.com/Article/2015/11/19/Nestle-Jamaica-to-divest-local-dairy-business-to-focus-on-international-brands',
     ],
   },
+  'Sweet Earth': {
+    parent: Entity.Nestle,
+    sources: [
+      'https://www.nestleusa.com/media/pressreleases/nestle-sweet-earth-foods',
+    ],
+  },
   "Taster's Choice": NESTLE_SOAKED_WATER_CONTROVERSY,
   Thomy: NESTLE_OUR_BRANDS,
   'Toll House': NESTLE_OUR_BRANDS,
