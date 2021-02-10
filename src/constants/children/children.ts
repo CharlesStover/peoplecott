@@ -62,10 +62,6 @@ const CHILDREN: Record<string, Child> = {
   },
   Cailler: NESTLE_OUR_BRANDS,
   Carnation: NESTLE_OUR_BRANDS,
-  Carola : {
-    parent: Entity.Nestle,
-    sources: ['https://i.redd.it/fw250qux78c31.png']
-  },
   Carpathia: {
     parent: Entity.Nestle,
     sources: [
@@ -228,10 +224,6 @@ const CHILDREN: Record<string, Child> = {
   Peptamen: NESTLE_OUR_BRANDS,
   Peptinex: NESTLE_NUTRITIONAL,
   Perrier: NESTLE_OUR_BRANDS,
-  Plancoët: {
-    parent: Entity.Nestle,
-    sources: ['https://i.redd.it/fw250qux78c31.png']
-  },
   'Poland Spring': NESTLE_OUR_BRANDS,
   PowerBar: NESTLE_SOAKED_WATER_CONTROVERSY,
   Probalance: NESTLE_NUTRITIONAL,
@@ -239,22 +231,10 @@ const CHILDREN: Record<string, Child> = {
   'Purina ONE': NESTLE_OUR_BRANDS,
   'Purina Pro Plan': NESTLE_OUR_BRANDS,
   'Quality Street': NESTLE_OUR_BRANDS,
-  Quézac : {
-    parent: Entity.Nestle,
-    sources: ['https://i.redd.it/fw250qux78c31.png']
-  },
   Replete: NESTLE_NUTRITIONAL,
   Resource: NESTLE_OUR_BRANDS,
   'Resource breeze': NESTLE_NUTRITIONAL,
   'S. Pellegrino': NESTLE_OUR_BRANDS,
-  'Saint-Lambert': {
-    parent: Entity.Nestle,
-    sources: ['https://i.redd.it/fw250qux78c31.png']
-  },
-  "Sainte-Alix": {
-    parent: Entity.Nestle,
-    sources: ['https://i.redd.it/fw250qux78c31.png']
-  },
   Schoeller: {
     parent: Entity.Nestle,
     sources: ['https://www.schoeller.de/'],
