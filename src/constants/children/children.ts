@@ -95,7 +95,7 @@ const CHILDREN: Record<string, Child> = {
   'Cookie Crisp': NESTLE_HEALTHY_EATING,
   Contrex : {
     parent: Entity.Nestle,
-    sources: ['https://i.redd.it/fw250qux78c31.png']
+    sources: ['https://www.contrex.fr/files/150811_MENTIONS_LEGALES_CONTREX']
   },
   Crucial: NESTLE_NUTRITIONAL,
   'Crunch Cereal': {
@@ -152,7 +152,7 @@ const CHILDREN: Record<string, Child> = {
   'Haagen-Dazs': NESTLE_OUR_BRANDS,
   Hépar: {
     parent: Entity.Nestle,
-    sources: ['https://i.redd.it/fw250qux78c31.png']
+    sources: ['https://www.hepar.fr/legal#block-hepar-content:~:text=Nestl%C3%A9%20Waters%20Marketing%20%26%20Distribution%2C%20adresse,RCS%20de%20Nanterre%20n%C2%B0479%20463%20044']
   },
   Herta: NESTLE_OUR_BRANDS,
   'Honey Nut Cheerios': NESTLE_HEALTHY_EATING,
@@ -274,7 +274,7 @@ const CHILDREN: Record<string, Child> = {
   Traumacal: NESTLE_NUTRITIONAL,
   Vittel : {
     parent: Entity.Nestle,
-    sources: ['https://i.redd.it/fw250qux78c31.png']
+    sources: ['https://www.vittel.com/history-vittel']
   },
   'Wagner GmbH': {
     parent: Entity.Nestle,
