@@ -1,10 +1,10 @@
-import Entity from '../entity';
+import Entity from '../../constants/entity';
 import {
-  NESTLE_OUR_BRANDS,
-  NESTLE_SOAKED_WATER_CONTROVERSY,
   NESTLE_HEALTHY_EATING,
-  NESTLE_PROBIOTIC,
   NESTLE_NUTRITIONAL,
+  NESTLE_OUR_BRANDS,
+  NESTLE_PROBIOTIC,
+  NESTLE_SOAKED_WATER_CONTROVERSY,
 } from './constants';
 import { Child } from './types';
 
@@ -12,7 +12,7 @@ import { Child } from './types';
 To add a child company, use the format
   ChildCompanyName: {
     parent: Entity.ParentCompany,
-    source: 'https://...',
+    sources: ['https://...'],
   },
 */
 const CHILDREN: Record<string, Child> = {
@@ -93,9 +93,9 @@ const CHILDREN: Record<string, Child> = {
   'Coco Shreddies': NESTLE_HEALTHY_EATING,
   'Coffee-Mate': NESTLE_OUR_BRANDS,
   'Cookie Crisp': NESTLE_HEALTHY_EATING,
-  Contrex : {
+  Contrex: {
     parent: Entity.Nestle,
-    sources: ['https://www.contrex.fr/files/150811_MENTIONS_LEGALES_CONTREX']
+    sources: ['https://www.contrex.fr/files/150811_MENTIONS_LEGALES_CONTREX'],
   },
   Crucial: NESTLE_NUTRITIONAL,
   'Crunch Cereal': {
@@ -152,7 +152,9 @@ const CHILDREN: Record<string, Child> = {
   'Haagen-Dazs': NESTLE_OUR_BRANDS,
   Hépar: {
     parent: Entity.Nestle,
-    sources: ['https://www.hepar.fr/legal#block-hepar-content:~:text=Nestl%C3%A9%20Waters%20Marketing%20%26%20Distribution%2C%20adresse,RCS%20de%20Nanterre%20n%C2%B0479%20463%20044']
+    sources: [
+      'https://www.hepar.fr/legal#block-hepar-content:~:text=Nestl%C3%A9%20Waters%20Marketing%20%26%20Distribution%2C%20adresse,RCS%20de%20Nanterre%20n%C2%B0479%20463%20044',
+    ],
   },
   Herta: NESTLE_OUR_BRANDS,
   'Honey Nut Cheerios': NESTLE_HEALTHY_EATING,
@@ -272,9 +274,9 @@ const CHILDREN: Record<string, Child> = {
   Thomy: NESTLE_OUR_BRANDS,
   'Toll House': NESTLE_OUR_BRANDS,
   Traumacal: NESTLE_NUTRITIONAL,
-  Vittel : {
+  Vittel: {
     parent: Entity.Nestle,
-    sources: ['https://www.vittel.com/history-vittel']
+    sources: ['https://www.vittel.com/history-vittel'],
   },
   'Wagner GmbH': {
     parent: Entity.Nestle,

@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import { ReactElement, useMemo } from 'react';
 import { useLocation } from 'react-router';
 import EntityType from '../../types/entity';
 import { entityMap } from '../../utils';
@@ -7,7 +7,7 @@ import { Info } from './components';
 export default function Entity(): null | ReactElement {
   const { search } = useLocation();
 
-  const entity: EntityType | null = React.useMemo((): EntityType | null => {
+  const entity: EntityType | null = useMemo((): EntityType | null => {
     const urlSearchParams: URLSearchParams = new URLSearchParams(search);
     const entityName: null | string = urlSearchParams.get('entity');
     if (entityName === null) {

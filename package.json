@@ -1,45 +1,76 @@
 {
   "name": "peoplecott",
   "version": "0.1.0",
+  "author": "Charles Stover <peoplecott@charlesstover.com>",
   "homepage": ".",
+  "license": "MIT",
+  "repository": "github:CharlesStover/peoplecott",
   "private": true,
   "browserslist": {
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ],
     "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+      "last 3 Chrome versions",
+      "last 3 Edge versions",
+      "last 3 Firefox versions",
+      "last 2 Safari versions"
+    ],
+    "development": [
+      "last 1 Chrome version",
+      "last 1 Firefox version"
     ]
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "bugs": {
+    "email": "peoplecott@charlesstover.com",
+    "url": "https://github.com/CharlesStover/peoplecott/issues"
+  },
+  "directories": {
+    "lib": "src"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/CharlesStover"
+  },
+  "publishConfig": {
+    "access": "restricted"
   },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "exit 0",
-    "eject": "react-scripts eject"
-  },
-  "dependencies": {
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
-    "fuzzysort": "^1.1.4",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.0",
-    "reactn": "^2.2.6",
-    "typescript": "^3.7.2"
+    "start": "react-scripts start",
+    "test": "eslint && jest",
+    "test-watch": "jest --coverage=false --watch"
   },
   "devDependencies": {
+    "@awsui/components-react": "^3.0.66",
+    "@awsui/design-tokens": "^3.0.7",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/react-hooks": "^5.1.0",
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.31",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
     "@types/react-router": "^5.1.7",
     "@types/react-router-dom": "^5.1.5",
-    "node-sass": "^4.13.1"
-  }
+    "@types/testing-library__react-hooks": "^4.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "awsui-dark-mode": "^1.0.3",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "fuzzysort": "^1.1.4",
+    "lazy-i18n": "^2.0.3",
+    "node-sass": "^5.0.0",
+    "prettier": "^2.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3",
+    "reactn": "^2.2.6",
+    "typescript": "^4.0.0",
+    "use-awsui": "^1.0.2",
+    "use-awsui-router": "^1.0.0"
+  },
+  "dependencies": {}
 }

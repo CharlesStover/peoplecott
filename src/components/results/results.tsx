@@ -1,5 +1,5 @@
 import fuzzysort from 'fuzzysort';
-import React from 'react';
+import { ReactElement, useMemo } from 'react';
 import { entityNames, globalStateProvider } from '../../utils';
 import './results.scss';
 import { Link } from 'react-router-dom';
@@ -15,10 +15,10 @@ const FUZZYSORT_OPTIONS: Fuzzysort.Options = {
   threshold: -10000,
 };
 
-export default function Results(): JSX.Element {
+export default function Results(): ReactElement {
   const [search] = globalStateProvider.useGlobal('search');
 
-  const fuzzyResults: Fuzzysort.Results = React.useMemo((): Fuzzysort.Results => {
+  const fuzzyResults: Fuzzysort.Results = useMemo((): Fuzzysort.Results => {
     return fuzzysort.go(search, fuzzyPreparedEntityNames, FUZZYSORT_OPTIONS);
   }, [search]);
 
@@ -26,7 +26,7 @@ export default function Results(): JSX.Element {
     <div className="results">
       <ul>
         {fuzzyResults.map(
-          (fuzzyResult: Fuzzysort.Result): JSX.Element => (
+          (fuzzyResult: Fuzzysort.Result): ReactElement => (
             <li key={fuzzyResult.target}>
               <Link
                 to={`?entity=${fuzzyResult.target}`}

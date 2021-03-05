@@ -1,4 +1,8 @@
+@import '~@awsui/design-tokens/index.scss';
+
 body {
+  background-color: $color-background-layout-main;
+  color: $color-text-body-default;
   display: flex;
   flex-direction: column;
   flex-grow: 1;

@@ -1,4 +1,4 @@
-import React, { ReactElement, RefObject } from 'react';
+import { ReactElement, RefObject, createRef, memo, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Entity from '../../../types/entity';
 import { globalStateProvider } from '../../../utils';
@@ -8,16 +8,16 @@ interface Props {
   children: Entity;
 }
 
-export default React.memo(function Info({ children }: Props): ReactElement {
+function Info({ children }: Props): ReactElement {
   const { name, parent, parentSources, reasons, sources } = children;
 
-  const ref: RefObject<HTMLDivElement> = React.createRef();
+  const ref: RefObject<HTMLDivElement> = createRef();
 
-  React.useEffect((): void => {
+  useEffect((): void => {
     globalStateProvider.setGlobal({ search: '' });
   }, [children]);
 
-  React.useEffect((): void => {
+  useEffect((): void => {
     if (ref.current && ref.current.scrollIntoView) {
       ref.current.scrollIntoView();
     }
@@ -80,4 +80,6 @@ export default React.memo(function Info({ children }: Props): ReactElement {
       </section>
     </section>
   );
-});
+}
+
+export default memo(Info);

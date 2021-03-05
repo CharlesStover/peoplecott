@@ -1,10 +1,10 @@
-import React, { ChangeEvent } from 'react';
+import { ChangeEvent, ReactElement, useCallback } from 'react';
 import { globalStateProvider } from '../../utils';
 
-export default function Search(): JSX.Element {
+export default function Search(): ReactElement {
   const [search, setSearch] = globalStateProvider.useGlobal('search');
 
-  const handleSearchChange = React.useCallback(
+  const handleSearchChange = useCallback(
     async (e: ChangeEvent<HTMLInputElement>): Promise<void> => {
       await setSearch(e.currentTarget.value);
     },
