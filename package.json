@@ -60,7 +60,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "fuzzysort": "^1.1.4",
     "lazy-i18n": "^2.0.3",
-    "node-sass": "^5.0.0",
+    "node-sass": "^7.0.0",
     "prettier": "^2.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
