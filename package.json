@@ -39,7 +39,7 @@
     "test-watch": "jest --coverage=false --watch"
   },
   "devDependencies": {
-    "@awsui/components-react": "^3.0.66",
+    "@awsui/components-react": "^3.0.367",
     "@awsui/design-tokens": "^3.0.7",
     "@testing-library/react": "^11.2.5",
     "@testing-library/react-hooks": "^5.1.0",
