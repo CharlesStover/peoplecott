@@ -217,6 +217,10 @@ const CHILDREN: Record<string, Child> = {
   },
   Oreo: NESTLE_SOAKED_WATER_CONTROVERSY,
   Orion: NESTLE_OUR_BRANDS,
+  Osem: {
+    parent: Entity.Nestle,
+    sources: ['https://en.wikipedia.org/wiki/Osem_(company)'],
+  },
   "Partner's Blend": {
     parent: Entity.Nestle,
     sources: [
